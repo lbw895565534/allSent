@@ -3,13 +3,13 @@ import Router from 'vue-router'
 import Index from '@/pages/index'
 import Show from '@/pages/show'
 import Upload from '@/pages/upload'
+import Album from '@/pages/album3D'
 
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/show',
       name: 'Show',
       component: Show
@@ -23,6 +23,11 @@ export default new Router({
       path: '/upload',
       name: 'Upload',
       component: Upload
+    },
+    {
+      path: '/album',
+      name: 'Album',
+      component: Album
     },
   ]
 })
